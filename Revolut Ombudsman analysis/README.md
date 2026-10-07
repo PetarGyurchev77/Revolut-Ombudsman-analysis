@@ -22,7 +22,7 @@ An upheld decision means the Ombudsman found in the customer's favour after the 
 
 ### 2. Revolut's problem is concentrated in one category
 
-![Share of each firm's Ombudsman decisions by complaint area](charts/02-complaint-mix.png)
+![Share of each firm's Ombudsman decisions by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_2.png)
 
 Complaint areas, 2025 (counts, uphold rate in brackets):
 
@@ -42,7 +42,7 @@ Scams are 85% of Revolut's decisions against 52% for both peers. Two secondary p
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
 
-![Decisions per 100,000 customers by complaint area](charts/01-decisions-per-100k.png)
+![Decisions per 100,000 customers by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_1.png)
 
 This comparison depends on customer numbers, which the firms publish at different dates and on different bases, so it is reported as a range across every published basis rather than as a single figure.
 
@@ -58,7 +58,7 @@ Revolut's customers reach a final Ombudsman decision on a scam complaint roughly
 
 ### 4. What closing the gap would be worth
 
-![Uphold rate by complaint area and firm](charts/03-uphold-rate.png)
+![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
 If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470 — about 940 to 1,060 fewer cases, worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
 
@@ -148,13 +148,12 @@ No two firms publish on the same date or the same basis, and Monzo grew from 12m
 ## Reproducing this
 
 ```
-notebooks/scrape_fos.ipynb     # collection, parsing, classification
-data/fos_decisions_2025.csv    # raw scrape, 2,937 decisions
-data/fos_classified_2025.csv   # with complaint areas
-report/fos_decisions.pbix      # Power BI report
-charts/                        # exported chart images
+notebooks/scrape_fos.ipynb            # collection, parsing, classification
+data/fos_decisions_2025.csv           # raw scrape, 2,937 decisions
+data/fos_classified_2025.csv          # with complaint areas
+Report/Visualisation_of_FOS.pbix      # Power BI report
+charts/                               # exported chart images
 ```
 
-*[Petar — adjust these paths to match your repo once it's set up.]*
 
 **Data sources:** [Ombudsman decisions database](https://www.financial-ombudsman.org.uk/businesses/resolving-complaint/ombudsman-decisions/search) · [Ombudsman case fees](https://www.financial-ombudsman.org.uk/businesses/resolving-complaint/case-fees) · firm customer figures as above. Data collected October 2026; robots.txt permits access to the decisions search.
