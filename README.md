@@ -22,7 +22,7 @@ An upheld decision means the Ombudsman found in the customer's favour after the 
 
 ### 2. Revolut's problem is concentrated in one category
 
-![Share of each firm's Ombudsman decisions by complaint area](Revolut Ombudsman analysis/Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_1.png)
+![Share of each firm's Ombudsman decisions by complaint area](Revolut-Ombudsman-analysis/Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_1.png)
 
 Complaint areas, 2025 (counts, uphold rate in brackets):
 
