@@ -41,7 +41,7 @@ Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
 
-![Decisions per 100,000 customers by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_1.png)
+![Decisions per 100,000 customers by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_2.png)
 
 This comparison depends on customer numbers, which the firms publish at different dates and on different bases. For this reason, I have chosen to report it as a range across every published basis rather than as a single figure.
 
