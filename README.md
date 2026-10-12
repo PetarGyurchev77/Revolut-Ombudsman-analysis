@@ -1,4 +1,4 @@
-# Where UK digital banks lose at the Ombudsman and what it costs
+# Where UK digital banks lose at the Ombudsman ...and what it costs
 
 Revolut's customers take more complaints to the Financial Ombudsman than any other UK digital bank according to the Ombudsman's business data. This project seeks to find trends in what the complaints are about, how often Revolut loses them and how this compares to its rival digital banks.
 
@@ -37,7 +37,7 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 
 Rates are not shown where there are fewer than 30 cases.
 
-Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Monzo) .
+Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
 
@@ -59,7 +59,7 @@ Revolut's customers reach a final Ombudsman decision on a scam complaint roughly
 
 ![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
-If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470 this difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
+If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470. This difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
 
 Alongside the baseline cost of the fees, each case also costs the firm internal handling time and effort. Furthermore, the upheld 30.6% end in redress paid to the customer.
 
@@ -99,7 +99,7 @@ Finally, I'd recommend looking at the escalation funnel. This is the complaints 
 
 ### Why?
 
-The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped frequently. Some examples include the search for "fraud" returning mostly scam cases, as they more common than not mention both words. Searching for "refund" matched nearly everything, since a refund is what almost every complainant wants.
+The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped frequently. Some examples include the search for "fraud" returning mostly scam cases, as they more often than not mention both words. Searching for "refund" matched nearly everything, since a refund is what almost every complainant wants.
 
 The rules classify on what went wrong, as suppose to what the customer asked for. So a scam victim requesting a refund is a scam case, not a card dispute. Priority order ensures that mixed cases are consistent.
 
