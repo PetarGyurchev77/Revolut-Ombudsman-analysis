@@ -1,4 +1,4 @@
-# Where UK digital banks lose at the Ombudsman — and what it costs
+# Where UK digital banks lose at the Ombudsman and what it costs
 
 Revolut's customers take more complaints to the Financial Ombudsman than any other UK digital bank according to the Ombudsman's business data. This project seeks to find trends in what the complaints are about, how often Revolut loses them and how this compares to its rival digital banks.
 
@@ -8,7 +8,6 @@ This project shows that scam complaints are at the forefront of Revolut's Ombuds
 
 ## Headline findings
 
-The first two findings need no customer numbers: they are shares and rates within each firm's own cases. The third does, so it is reported as a range.
 
 ### 1. Revolut loses more of the decisions it reaches
 
@@ -38,13 +37,13 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 
 Rates are not shown where there are fewer than 30 cases.
 
-Scams are 85% of Revolut's decisions against 52% for both peers. Two secondary points: when Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms; and Cifas fraud markers are a Monzo issue (100 cases) rather than a Revolut one (13).
+Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Monzo) .
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
 
 ![Decisions per 100,000 customers by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_1.png)
 
-This comparison depends on customer numbers, which the firms publish at different dates and on different bases, so it is reported as a range across every published basis rather than as a single figure.
+This comparison depends on customer numbers, which the firms publish at different dates and on different bases. For this reason, I have chosen to report it as a range across every published basis rather than as a single figure.
 
 | Basis | Revolut | Monzo | Starling | Revolut vs Monzo |
 |---|---|---|---|---|
@@ -54,15 +53,15 @@ This comparison depends on customer numbers, which the firms publish at differen
 
 *Scam decisions per 100,000 customers, 2025.*
 
-Revolut's customers reach a final Ombudsman decision on a scam complaint roughly three times as often as Monzo's — between 2.8× and 3.6× depending on which published figure is used. The direction is the same on every basis; the precise multiple is not knowable from outside.
+Revolut's customers reach a final Ombudsman decision on a scam complaint roughly three times as often as Monzo's, between 2.8× and 3.6× depending on which published figure is used. The direction is the same on every basis, regardless of which exact numbers have been used.
 
 ### 4. What closing the gap would be worth
 
 ![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
-If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470 — about 940 to 1,060 fewer cases, worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
+If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470 this difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
 
-Fees are the floor, not the total. Each case also carries internal handling time, and 30.6% end in redress paid to the customer.
+Alongside the baseline cost of the fees, each case also costs the firm internal handling time and effort. Furthermore, the upheld 30.6% end in redress paid to the customer.
 
 ---
 
@@ -98,16 +97,16 @@ Finally, I'd recommend looking at the escalation funnel. This is the complaints 
 4. **Normalise.** Decisions per 100,000 customers, on each published customer basis.
 5. **Size.** The difference between Revolut's scam rate and its peers', valued at the Ombudsman case fee.
 
-### Why classification by rules rather than by hand
+### Why?
 
-The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped badly: a search for "fraud" returned mostly scam cases, because scam decisions mention both words, and "refund" matched nearly everything, since a refund is what almost every complainant wants. Keyword counts cannot produce mutually exclusive categories.
+The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped frequently. Some examples include the search for "fraud" returning mostly scam cases, as they more common than not mention both words. Searching for "refund" matched nearly everything, since a refund is what almost every complainant wants.
 
-The rules classify on **what went wrong, not what the customer asked for**: a scam victim requesting a refund is a scam case, not a card dispute. Priority order resolves mixed cases, which makes the result reproducible and the logic arguable.
+The rules classify on what went wrong, as suppose to what the customer asked for. So a scam victim requesting a refund is a scam case, not a card dispute. Priority order ensures that mixed cases are consistent.
 
 ### Validation
 
 - **Scrape reconciled to published totals:** Revolut 1,727 of 1,727 and Starling exact; Monzo 943 of 944 (one decision missed, 0.1%).
-- **Classifier:** rules refined against a sample of 30 hand-classified decisions, then validated against a second, independent sample of 30 — **90% agreement**. Disagreements were mixed scam/unauthorised cases and payment types outside the card rule (direct debits).
+- **Classifier:** rules refined against a sample of 30 hand-classified decisions, then validated against a second, independent sample of 30, resulting in a 90% agreement. Disagreements were mixed scam/unauthorised cases and payment types outside the card rule (direct debits).
 
 ### Data quality issues found and fixed
 
@@ -116,8 +115,8 @@ The rules classify on **what went wrong, not what the customer asked for**: a sc
 | Searching "Starling" also matched **Startline Motor Finance** | 104 unrelated motor-finance decisions in the Starling data, with a 40% uphold rate, inflating Starling's rate from 19.9% to 25.6% | Filter firm names against the search term |
 | Summaries don't always repeat the decision reference | 9 rows failed to parse | Made that element optional in the pattern |
 | Source text uses curly apostrophes | `didn't authorise` never matched, so unauthorised-payment cases were misfiled as scams | Normalise apostrophes before matching |
-| December-only sample considered early on | December's uphold rate (11%) is a third of the 2025 rate (30%) | Abandoned sampling; used the full year |
-| Summaries are truncated, anonymised excerpts | ~3% of rows are textually identical to another decision | Decision reference is the unique key; never deduplicate on text |
+| December-only sample considered early on | December's uphold rate (11%) is a third of the 2025 rate (30%) | Abandoned sampling and used the full year |
+| Summaries are truncated, anonymised excerpts | ~3% of rows are textually identical to another decision | Decision reference is the unique key |
 
 ---
 
@@ -130,13 +129,13 @@ The rules classify on **what went wrong, not what the customer asked for**: a sc
 | Monzo | 12m | Total customers | FY25, Feb 2025 | [Monzo Annual Report 2025](https://monzo.com/annual-report/2025) |
 | Starling | 4.6m | Customer **accounts** (3.0m active core accounts) | 31 Mar 2025 | [Starling Annual Report 2025](https://www.starlingbank.com/investors/2025/annual-report-2025/) |
 
-No two firms publish on the same date or the same basis, and Monzo grew from 12m to 14m during 2025, so any single per-customer ratio is sensitive to which figure is chosen. That is why finding 3 is a range, and why findings 1 and 2 — which need no denominator — carry the argument. Starling publishes accounts rather than customers; using the larger 4.6m figure is the conservative choice, as it lowers Starling's rate and narrows Revolut's gap.
+No two firms publish on the same date or the same basis, and Monzo grew from 12m to 14m during 2025, so any single per-customer ratio is sensitive to which figure is chosen. That is why finding 3 is a range, and why findings 1 and 2 carry the argument. Starling publishes accounts rather than customers. Without being able to separate the customers, it is worth noting that this lowers Starling's rate thus narrowing Revolut's gap.
 
 ---
 
 ## Limitations
 
-- **Published final decisions only.** Most complaints are resolved before an ombudsman issues a decision, so this is the tip of the funnel. "30% uphold rate" means 30% of published decisions, not 30% of complaints.
+- **Published final decisions only.** Most complaints are resolved before an ombudsman issues a decision, so we're limited to seeing only what gets published by the Ombudsman. "30% uphold rate" means 30% of published decisions, not 30% of Revolut's total complaints.
 - **No causation.** A higher escalation rate per customer is consistent with explanations this data cannot separate: customer mix (Revolut skews towards international and crypto payments, where scams concentrate), how easily customers escalate, use of claims management firms, and first-line complaint handling.
 - **Many complaints arrive via professional representatives,** which affects volumes independently of the underlying service.
 - **90% classifier accuracy** means roughly 1 in 10 decisions sits in the wrong category. Large categories are robust to this; small ones are not.
