@@ -23,6 +23,8 @@ An upheld decision means the Ombudsman found in the customer's favour after the 
 
 ![Share of each firm's Ombudsman decisions by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_2.png)
 
+
+
 Complaint areas, 2025 (counts, uphold rate in brackets):
 
 | Area | Revolut | Monzo | Starling |
