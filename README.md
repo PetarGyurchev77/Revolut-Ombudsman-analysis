@@ -23,6 +23,8 @@ An upheld decision means the Ombudsman found in the customer's favour after the 
 
 ![Share of each firm's Ombudsman decisions by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_2.png)
 
+Scams accounted for 85% of Revolut's published Ombudsman decisions, against 52% for Monzo and 53% for Starling. This could stem from either a high number of scam cases or a low number of other cases. In this instance, it's both. In every non-scam category, with the exception of unauthorised fraud, Revolut has fewer Ombudsman decisions per customer than its peers (see the chart in finding 3). Across all non-scam categories combined, Revolut has about 2.0 decisions per 100,000 customers, against 3.2 for Monzo and 2.7 for Starling.
+
 Complaint areas, 2025 (counts, uphold rate in brackets):
 
 | Area | Revolut | Monzo | Starling |
@@ -39,7 +41,7 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 
 Rates are not shown where there are 30 or fewer cases.
 
-Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
+When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
 
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
