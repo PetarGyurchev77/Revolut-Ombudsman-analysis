@@ -2,7 +2,7 @@
 
 Revolut's customers take more complaints to the Financial Ombudsman than any other UK digital bank according to the Ombudsman's business data. This project seeks to find trends in what the complaints are about, how often Revolut loses them and how this compares to its rival digital banks.
 
-This project shows that scam complaints are at the forefront of Revolut's Ombudsman cases. Across 2,937 published Ombudsman decisions in 2025, scam complaints account for 85% of Revolut's decisions, compared to 52% for both Monzo and Starling. Adjusted for customer numbers, Revolut's customers reach a final decision on a scam complaint around three times as often as Monzo's: 11.3 against 3.5 per 100,000 customers. It is also found that Revolut loses a higher percentage of the cases that are published, with an uphold rate of 30.0% across all complaint types against 24.8% and 19.9% for Monzo and Starling respectively. However, this number changes when uphold rates in the scam area alone are observed, with Revolut sitting at 30.6%, only slightly above Monzo's 28.0%, a difference that is not statistically significant (p=0.27). This reveals that the problem Revolut faces is one to do with volume, not decision quality. If efforts were made to reduce Revolut's scam cases per customer so that it would align with Monzo's, it would avoid roughly 1,000 cases a year, which in Ombudsman fees alone equates to £600,000–700,000 a year at most.
+This project shows that scam complaints are at the forefront of Revolut's Ombudsman cases. Across 2,937 published Ombudsman decisions in 2025, scam complaints account for 85% of Revolut's decisions, compared to 52% for both Monzo and Starling. Adjusted for customer numbers, Revolut's customers reach a final decision on a scam complaint around three times as often as Monzo's: 11.3 against 3.5 per 100,000 customers. It is also found that Revolut loses a higher percentage of the cases that are published, with an uphold rate of 30.0% across all complaint types against 24.8% and 19.9% for Monzo and Starling respectively. However, this number changes when uphold rates in the scam area alone are observed, with Revolut sitting at 30.6%, only slightly above Monzo's 28.0%, a difference that is not statistically significant (p=0.27). This reveals that the problem Revolut faces is one to do with volume, not decision quality. If efforts were made to reduce Revolut's scam cases per customer so that it would align with Monzo's, it would avoid roughly 1,000 cases a year, which in Ombudsman fees alone equates to £639,000–£719,000 a year at most.
 
 ---
 
@@ -59,7 +59,7 @@ Revolut's customers reach a final Ombudsman decision on a scam complaint roughly
 
 ![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
-If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 450–530 scam decisions instead of 1,470. This difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
+If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 410–530 scam decisions instead of 1,470. This difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
 
 Alongside the baseline cost of the fees, each case also costs the firm internal handling time and effort. Furthermore, the upheld 30.6% end in redress paid to the customer.
 
@@ -73,7 +73,7 @@ My first recommendation would be to look at trends in the scam complaints before
 
 Each of these 1,470 cases reached the Ombudsman because Revolut's own answer didn't satisfy the customer. If one was to look at the number of scam cases, not just being taken but then being lost to the Ombudsman, you'd see a much higher raw number for Revolut than its rival banks. This makes it easy to believe that Revolut's decision making on these complaints initially is misaligned with the Ombudsman policies, causing the higher number of upheld scam-related decisions. However, whilst Revolut's uphold rate (30.6%) is higher than Monzo's (28.0%), it is not significantly as such (p=0.27) which doesn't support the issue being in the decision quality. The greatest difference between the two banks lies the number of scam complaints per 100,000 customers. With Revolut's 11.3 versus Monzo's 3.5 and the proportion of its complaints that are scam-related, with Revolut sitting at 85% against Monzo's 52%. This means that Revolut not only has over three times as many scam complaints per customer being taken to the Ombudsman, but it also accounts for a greater proportion of its overall complaints. This points in the direction of problems such as the app not having adequate warnings against potential scams or to a case of scammers targeting Revolut customers specifically, for which the investigation above would aim to pinpoint.
 
-Decreasing the volume of scam complaints to align with that of Monzo's would mean a decrease in around 1,000 ombudsman decisions, which could be worth up to £0.6–0.7m in Ombudsman fees, so knowing what the root cause is for the increase in scams should be first priority.
+Decreasing the volume of scam complaints to align with that of Monzo's would mean a decrease in around 1,000 ombudsman decisions, which could be worth up to £639,000–£719,000 in Ombudsman fees, so knowing what the root cause is for the increase in scams should be first priority.
 
 ### 2. Review blocked-account decisions
 
@@ -112,10 +112,10 @@ The rules classify on what went wrong, as suppose to what the customer asked for
 
 | Issue | Effect | Fix |
 |---|---|---|
-| Searching "Starling" also matched **Startline Motor Finance** | 104 unrelated motor-finance decisions in the Starling data, with a 40% uphold rate, inflating Starling's rate from 19.9% to 25.6% | Filter firm names against the search term |
+| Searching "Starling" also matched **Startline Motor Finance** | 105 unrelated motor-finance decisions in the Starling data, with a 40% uphold rate, inflating Starling's rate from 19.9% to 25.5% | Filter firm names against the search term |
 | Summaries don't always repeat the decision reference | 9 rows failed to parse | Made that element optional in the pattern |
 | Source text uses curly apostrophes | `didn't authorise` never matched, so unauthorised-payment cases were misfiled as scams | Normalise apostrophes before matching |
-| December-only sample considered early on | December's uphold rate (11%) is a third of the 2025 rate (30%) | Abandoned sampling and used the full year |
+| December-only sample considered early on | Revolut's December's uphold rate (11%) is a third of the 2025 rate (30%) | Abandoned sampling and used the full year |
 | Summaries are truncated, anonymised excerpts | ~3% of rows are textually identical to another decision | Decision reference is the unique key |
 
 ---
