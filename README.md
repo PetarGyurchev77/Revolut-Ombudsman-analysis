@@ -98,12 +98,12 @@ Finally, I'd recommend looking at the escalation funnel. This is the complaints 
 
 ## Method
 
-1.  Python scraper (`requests` + `BeautifulSoup`) over the Ombudsman's published decisions search, one request per second, pages cached so nothing is fetched twice. Three searches: Revolut, Monzo, Starling, banking sector, 1 Jan – 31 Dec 2025.
-2.  Regular expressions pull reference, date, firm, outcome, product and complaint summary from each result.
-3.  Rule-based classifier assigns each decision one complaint area, rules applied in priority order so categories are mutually exclusive.
-4.  Decisions per 100,000 customers, on each published customer basis.
-5.  The difference between Revolut's scam rate and its peers', valued at the Ombudsman case fee.
-
+1. Built a Python scraper (`requests` + `BeautifulSoup`) over the Ombudsman's published decisions search, making one request per second and caching pages so nothing is fetched twice. Ran three searches (Revolut, Monzo and Starling) in the banking sector, from 1 Jan to 31 Dec 2025.
+2. Used regular expressions to pull reference, date, firm, outcome, product and complaint summary from each result.
+3. Built a rule-based classifier that assigns each decision one complaint area, with rules applied in priority order so categories are mutually exclusive.
+4. Converted decision counts to decisions per 100,000 customers, on each published customer basis.
+5. Valued the difference between Revolut's scam rate and Monzo's at the Ombudsman case fee.
+   
 ### Why?
 
 The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped frequently. Some examples include the search for "fraud" returning mostly scam cases, as they more often than not mention both words. Searching for "refund" matched nearly everything, since a refund is what almost every complainant wants.
@@ -142,12 +142,12 @@ No two firms publish on the same date or the same basis, and Monzo grew from 12m
 
 ## Limitations
 
--  Most complaints are resolved before an ombudsman issues a decision, so we're limited to seeing only what gets published by the Ombudsman. "30% uphold rate" means 30% of published decisions, not 30% of Revolut's total complaints.
-- A higher escalation rate per customer is consistent with explanations this data cannot separate: customer mix (Revolut skews towards international and crypto payments, where scams concentrate), how easily customers escalate, use of claims management firms, and first-line complaint handling.
-- Many complaints arrive via professional representatives, which affects volumes independently of the underlying service.
-- 90% classifier accuracy means roughly 1 in 10 decisions sits in the wrong category. Large categories are robust to this; small ones are not.
-- Case fee is a maximum (£680) and firms receive an annual allowance, so fee figures are an upper bound.
-- Customer numbers are self-reported, differently defined and differently dated (see above).
+- Most complaints are resolved before an ombudsman issues a decision, so we're limited to seeing only what gets published by the Ombudsman. "30% uphold rate" means 30% of published decisions, not 30% of Revolut's total complaints.
+- This data can't show why Revolut's escalation rate per customer is higher. Possible reasons include customer mix (Revolut skews towards international and crypto payments, where scams concentrate), how easily customers escalate, use of claims management firms, and first-line complaint handling.
+- Many complaints arrive via professional representatives, which can raise the number of cases regardless of how good the bank's service is.
+- 90% classifier accuracy means roughly 1 in 10 decisions sits in the wrong category. This matters less for large categories like scams, but the counts for small categories could be noticeably off.
+- The fee figures use the current case fee of £680, which applies from April 2026, so 2025 decisions would have been charged at a lower rate. Firms also get a £2,000 annual allowance, and fees apply to cases resolved before a final decision as well, so the figures are an estimate rather than an exact cost.
+- Customer numbers are self-reported, and each firm defines and dates them differently (see above).
 
 ---
 
