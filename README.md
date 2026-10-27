@@ -23,8 +23,6 @@ An upheld decision means the Ombudsman found in the customer's favour after the 
 
 ![Share of each firm's Ombudsman decisions by complaint area](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_2.png)
 
-
-
 Complaint areas, 2025 (counts, uphold rate in brackets):
 
 | Area | Revolut | Monzo | Starling |
@@ -36,12 +34,12 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 | Cifas marker | 13 (n/a) | 100 (14.0%) | 11 (n/a) |
 | Gambling and vulnerability | 8 (n/a) | 11 (n/a) | 4 (n/a) |
 | Other | 62 (32.3%) | 121 (26.4%) | 39 (38.5%) |
-
 Rates are not shown where there are 30 or fewer cases.
+
+Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
 
 ![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
-Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
 
