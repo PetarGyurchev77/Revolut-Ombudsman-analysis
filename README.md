@@ -35,7 +35,7 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 | Gambling and vulnerability | 8 (n/a) | 11 (n/a) | 4 (n/a) |
 | Other | 62 (32.3%) | 121 (26.4%) | 39 (38.5%) |
 
-Rates are not shown where there are fewer than 30 cases.
+Rates are not shown where there are 30 or fewer cases.
 
 ![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
