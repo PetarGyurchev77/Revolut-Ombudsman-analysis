@@ -112,8 +112,8 @@ The rules classify on what went wrong, as opposed to what the customer asked for
 
 ### Validation
 
-- **Scrape reconciled to published totals:** Revolut 1,727 of 1,727 and Starling exact; Monzo 943 of 944 (one decision missed, 0.1%).
-- **Classifier:** rules refined against a sample of 30 hand-classified decisions, then validated against a second, independent sample of 30, resulting in a 90% agreement. Disagreements were mixed scam/unauthorised cases and payment types outside the card rule (direct debits).
+- Scrape reconciled to published totals: Revolut 1,727 of 1,727 and Starling exact; Monzo 943 of 944 (one decision missed, 0.1%).
+- Classifier: rules refined against a sample of 30 hand-classified decisions, then validated against a second, independent sample of 30, resulting in a 90% agreement. Disagreements were mixed scam/unauthorised cases and payment types outside the card rule (direct debits).
 
 ### Data quality issues found and fixed
 
