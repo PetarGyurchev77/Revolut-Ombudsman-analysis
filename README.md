@@ -37,6 +37,8 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 
 Rates are not shown where there are fewer than 30 cases.
 
+![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
+
 Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
 
 ### 3. Per customer, Revolut's scam escalations are about three times Monzo's
@@ -57,7 +59,6 @@ Revolut's customers reach a final Ombudsman decision on a scam complaint roughly
 
 ### 4. What closing the gap would be worth
 
-![Uphold rate by complaint area and firm](Charts/1791199300631-82ac8d14-d8ab-4d0c-8dbd-ad4c615617c1_3.png)
 
 If Revolut's scam decisions per customer matched Monzo's, it would have had roughly 410–530 scam decisions instead of 1,470. This difference could be worth up to £639,000–£719,000 in Ombudsman case fees (at the maximum £680 per case).
 
