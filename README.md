@@ -1,4 +1,4 @@
-# Where UK digital banks lose at the Ombudsman ...and what it costs
+# Where UK digital banks lose at the Ombudsman, and what it costs
 
 Revolut's customers take more complaints to the Financial Ombudsman than any other UK digital bank according to the Ombudsman's business data. This project seeks to find trends in what the complaints are about, how often Revolut loses them and how this compares to its rival digital banks.
 
@@ -76,9 +76,9 @@ Alongside the baseline cost of the fees, each case also costs the firm internal 
 
 ### 1. Find the root cause of scam volume, not scam decisions
 
-My first recommendation would be to look at trends in the scam complaints before escalation, more specifically in finding the root cause of scam volume, not scam decisions. I'd look for why Revolut has a higher volume of scam complaints and what could then be done to offset this. I'd investigate the source of the scams to determine whether or not this is where the volume problem is arising from. I'd split the scam cases into type categories (Job, Investment, Purchase, romance etc.), Payment rail (card, bank transfer, crypto etc.), customer tenure and over time. If one of these areas dominate, that's where I'd look the hardest.
+My first recommendation would be to look at trends in the scam complaints before escalation, more specifically in finding the root cause of scam volume, not scam decisions. I'd look for why Revolut has a higher volume of scam complaints and what could then be done to offset this. I'd investigate the source of the scams to determine whether or not this is where the volume problem is arising from. I'd split the scam cases into type categories (Job, Investment, Purchase, romance etc.), Payment rail (card, bank transfer, crypto etc.), customer tenure and over time. If one of these areas dominates, that's where I'd look the hardest.
 
-Each of these 1,470 cases reached the Ombudsman because Revolut's own answer didn't satisfy the customer. If one was to look at the number of scam cases, not just being taken but then being lost to the Ombudsman, you'd see a much higher raw number for Revolut than its rival banks. This makes it easy to believe that Revolut's decision making on these complaints initially is misaligned with the Ombudsman policies, causing the higher number of upheld scam-related decisions. However, whilst Revolut's uphold rate (30.6%) is higher than Monzo's (28.0%), it is not significantly as such (p=0.27) which doesn't support the issue being in the decision quality. The greatest difference between the two banks lies the number of scam complaints per 100,000 customers. With Revolut's 11.3 versus Monzo's 3.5 and the proportion of its complaints that are scam-related, with Revolut sitting at 85% against Monzo's 52%. This means that Revolut not only has over three times as many scam complaints per customer being taken to the Ombudsman, but it also accounts for a greater proportion of its overall complaints. This points in the direction of problems such as the app not having adequate warnings against potential scams or to a case of scammers targeting Revolut customers specifically, for which the investigation above would aim to pinpoint.
+Each of these 1,470 cases reached the Ombudsman because Revolut's own answer didn't satisfy the customer. If one was to look at the number of scam cases, not just being taken but then being lost to the Ombudsman, you'd see a much higher raw number for Revolut than its rival banks. This makes it easy to believe that Revolut's decision making on these complaints initially is misaligned with the Ombudsman policies, causing the higher number of upheld scam-related decisions. However, whilst Revolut's uphold rate (30.6%) is higher than Monzo's (28.0%), it is not significantly as such (p=0.27) which doesn't support the issue being in the decision quality. The greatest difference between the two banks lies in the number of scam complaints per 100,000 customers (Revolut's 11.3 versus Monzo's 3.5) and the proportion of its complaints that are scam-related (85% for Revolut versus 52% for Monzo). This means that Revolut not only has over three times as many scam complaints per customer being taken to the Ombudsman, but it also accounts for a greater proportion of its overall complaints. This points in the direction of problems such as the app not having adequate warnings against potential scams or to a case of scammers targeting Revolut customers specifically, for which the investigation above would aim to pinpoint.
 
 Decreasing the volume of scam complaints to align with that of Monzo's would mean a decrease in around 1,000 ombudsman decisions, which could be worth up to £639,000–£719,000 in Ombudsman fees, so knowing what the root cause is for the increase in scams should be first priority.
 
@@ -86,7 +86,7 @@ Decreasing the volume of scam complaints to align with that of Monzo's would mea
 
 My second recommendation would be to review the blocked account decisions taken to the Financial Ombudsman and look into why they are being upheld. Similar to the previous recommendation, I'd look for trends in those upheld complaints, such as reason given for account being blocked or communication following an account block, from which we can then begin taking action.
 
-Unlike the scam complaints, the number of cases escalated are low in volume (39). However, the blocked-account related cases taken to the Financial Ombudsman were upheld against Revolut 33.3% of the time, a number significantly higher (p=0.03) than that of Monzo's (16.1%). It is also Revolut's highest uphold rate category in cases taken to the Ombudsman, meaning Revolut's blocked-account decisions are overturned roughly twice as often as Monzo's.
+Unlike the scam complaints, the number of cases escalated is low in volume (39). However, the blocked-account related cases taken to the Financial Ombudsman were upheld against Revolut 33.3% of the time, a number significantly higher (p=0.03) than that of Monzo's (16.1%). It is also Revolut's highest uphold rate category in cases taken to the Ombudsman, meaning Revolut's blocked-account decisions are overturned roughly twice as often as Monzo's.
 
 Decreasing the uphold rate in cases taken to the Ombudsman would benefit the firm in many ways. A frozen account completely restricts the user from access, cutting them off from their money. This is exactly the sort of thing that would attract regulatory attention, so tackling this would be a high priority task in my opinion. A few other reasons to look into this are the costs of the cases. Losing a case costs more than winning one: the case fee falls by £180, to £500, when referred by a professional representative. The larger cost of an upheld decision is the redress paid to the customer as well as the 'trust' between the bank and customer, which will very likely decrease with lack of access. The uphold rate being high may also incline customers to more frequently escalate cases.
 
@@ -98,17 +98,17 @@ Finally, I'd recommend looking at the escalation funnel. This is the complaints 
 
 ## Method
 
-1. **Collect.** Python scraper (`requests` + `BeautifulSoup`) over the Ombudsman's published decisions search, one request per second, pages cached so nothing is fetched twice. Three searches: Revolut, Monzo, Starling, banking sector, 1 Jan – 31 Dec 2025.
-2. **Parse.** Regular expressions pull reference, date, firm, outcome, product and complaint summary from each result.
-3. **Classify.** Rule-based classifier assigns each decision one complaint area, rules applied in priority order so categories are mutually exclusive.
-4. **Normalise.** Decisions per 100,000 customers, on each published customer basis.
-5. **Size.** The difference between Revolut's scam rate and its peers', valued at the Ombudsman case fee.
+1.  Python scraper (`requests` + `BeautifulSoup`) over the Ombudsman's published decisions search, one request per second, pages cached so nothing is fetched twice. Three searches: Revolut, Monzo, Starling, banking sector, 1 Jan – 31 Dec 2025.
+2.  Regular expressions pull reference, date, firm, outcome, product and complaint summary from each result.
+3.  Rule-based classifier assigns each decision one complaint area, rules applied in priority order so categories are mutually exclusive.
+4.  Decisions per 100,000 customers, on each published customer basis.
+5.  The difference between Revolut's scam rate and its peers', valued at the Ombudsman case fee.
 
 ### Why?
 
 The first approach counted keyword search results on the Ombudsman site. Spot checks showed the keywords overlapped frequently. Some examples include the search for "fraud" returning mostly scam cases, as they more often than not mention both words. Searching for "refund" matched nearly everything, since a refund is what almost every complainant wants.
 
-The rules classify on what went wrong, as suppose to what the customer asked for. So a scam victim requesting a refund is a scam case, not a card dispute. Priority order ensures that mixed cases are consistent.
+The rules classify on what went wrong, as opposed to what the customer asked for. So a scam victim requesting a refund is a scam case, not a card dispute. Priority order ensures that mixed cases are consistent.
 
 ### Validation
 
@@ -142,12 +142,12 @@ No two firms publish on the same date or the same basis, and Monzo grew from 12m
 
 ## Limitations
 
-- **Published final decisions only.** Most complaints are resolved before an ombudsman issues a decision, so we're limited to seeing only what gets published by the Ombudsman. "30% uphold rate" means 30% of published decisions, not 30% of Revolut's total complaints.
-- **No causation.** A higher escalation rate per customer is consistent with explanations this data cannot separate: customer mix (Revolut skews towards international and crypto payments, where scams concentrate), how easily customers escalate, use of claims management firms, and first-line complaint handling.
-- **Many complaints arrive via professional representatives,** which affects volumes independently of the underlying service.
-- **90% classifier accuracy** means roughly 1 in 10 decisions sits in the wrong category. Large categories are robust to this; small ones are not.
-- **Case fee is a maximum (£680)** and firms receive an annual allowance, so fee figures are an upper bound.
-- **Customer numbers are self-reported,** differently defined and differently dated (see above).
+-  Most complaints are resolved before an ombudsman issues a decision, so we're limited to seeing only what gets published by the Ombudsman. "30% uphold rate" means 30% of published decisions, not 30% of Revolut's total complaints.
+- A higher escalation rate per customer is consistent with explanations this data cannot separate: customer mix (Revolut skews towards international and crypto payments, where scams concentrate), how easily customers escalate, use of claims management firms, and first-line complaint handling.
+- Many complaints arrive via professional representatives, which affects volumes independently of the underlying service.
+- 90% classifier accuracy means roughly 1 in 10 decisions sits in the wrong category. Large categories are robust to this; small ones are not.
+- Case fee is a maximum (£680) and firms receive an annual allowance, so fee figures are an upper bound.
+- Customer numbers are self-reported, differently defined and differently dated (see above).
 
 ---
 
