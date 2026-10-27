@@ -34,6 +34,7 @@ Complaint areas, 2025 (counts, uphold rate in brackets):
 | Cifas marker | 13 (n/a) | 100 (14.0%) | 11 (n/a) |
 | Gambling and vulnerability | 8 (n/a) | 11 (n/a) | 4 (n/a) |
 | Other | 62 (32.3%) | 121 (26.4%) | 39 (38.5%) |
+
 Rates are not shown where there are 30 or fewer cases.
 
 Scams are 85% of Revolut's decisions against 52% for both peers. When Revolut is challenged on blocking an account it loses a third of the time, its worst category and the highest of the three firms. Cifas fraud markers are a Monzo issue where the 100 cases stand out compared to the 13 (Revolut) and 11 (Starling).
