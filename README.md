@@ -147,7 +147,7 @@ No two firms publish on the same date or the same basis, and Monzo grew from 12m
 ## Reproducing this
 
 ```
-notebooks/scrape_fos.ipynb            # collection, parsing, classification
+scrape_fos.ipynb                      # collection, parsing, classification
 data/fos_decisions_2025.csv           # raw scrape, 2,937 decisions
 data/fos_classified_2025.csv          # with complaint areas
 Report/Visualisation of FOS.pbix      # Power BI report
